@@ -1,0 +1,92 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# MedAssist — .gitignore
+# CRITICAL: Never commit .env files — they contain API keys and secrets.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ──────────────────────────────────────────────
+# Environment / Secrets (NEVER commit)
+# ──────────────────────────────────────────────
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+backend/.env
+frontend/.env
+!.env.example
+!**/.env.example
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.log
+
+# ──────────────────────────────────────────────
+# Node / Frontend
+# ──────────────────────────────────────────────
+node_modules/
+dist/
+.next/
+out/
+.nuxt/
+.cache/
+*.local
+
+# ──────────────────────────────────────────────
+# IDEs
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ──────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+# Uploaded / temporary files (never store real docs)
+# ──────────────────────────────────────────────
+uploads/
+temp_uploads/
+*.tmp
+
+# ──────────────────────────────────────────────
+# Service account credentials (NEVER commit)
+# ──────────────────────────────────────────────
+*service-account*.json
+*credentials*.json
+*secret*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!jsconfig.json
+!vercel.json
+!**/vercel.json
+
